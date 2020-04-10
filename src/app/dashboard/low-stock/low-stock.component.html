@@ -1,9 +1,17 @@
 <div class="panel panel-danger">
   <div class="panel-heading">
     <h3 class="panel-title"><span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span> {{title}}</h3>
-    <md-input-container>
+    <!-- <md-input-container>
       <input mdInput placeholder="Product">
-    </md-input-container>
+    </md-input-container> -->
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Product</mat-label>
+      <input matInput placeholder="Product">
+    </mat-form-field>
+
+
+
     <button type="button" class="btn btn-sm btn-default"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></button>
   </div>
 

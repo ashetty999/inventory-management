@@ -2,7 +2,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MdTabsModule, MdDialogContainer, MdDialogModule } from '@angular/material';
+import { MatTabsModule } from '@angular/material/tabs';
+import { MatDialogContainer, MatDialogModule } from '@angular/material/dialog';
+import { MatInputModule } from '@angular/material/input';
 
 import { AppComponent } from './app.component';
 import { DashboardModule } from './dashboard/dashboard.module';
@@ -15,13 +17,14 @@ const appRoutes: Routes = [
   declarations: [
     AppComponent
   ],
-  entryComponents: [MdDialogContainer, ],
+  entryComponents: [MatDialogContainer, ],
   imports: [
     RouterModule.forRoot(appRoutes),
     BrowserModule,
     BrowserAnimationsModule,
-    MdTabsModule,
-    MdDialogModule,
+    MatTabsModule,
+    MatDialogModule,
+    MatInputModule,
     DashboardModule,
     ProductModule
   ],

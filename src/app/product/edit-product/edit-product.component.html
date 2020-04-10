@@ -1,18 +1,29 @@
 <h3 md-dialog-title>Edit Product</h3>
 
-<md-dialog-content>
+<!-- <mat-dialog-content>
   <form>
-    <md-input-container class="full-width">
+    <mat-input-container class="full-width">
       <input mdInput placeholder="Product" value={{data.product}}>
-    </md-input-container>
+    </mat-input-container>
     <br>
-    <md-input-container>
+    <mat-input-container>
       <input mdInput placeholder="Threshold" value={{data.threshold}}>
-    </md-input-container>
+    </mat-input-container>
   </form>
-</md-dialog-content>
+</mat-dialog-content>
+ -->
+<form class="example-form">
+  <mat-form-field class="example-full-width">
+    <mat-label>Favorite food</mat-label>
+    <input matInput placeholder="Product" value={{data.product}}>
+  </mat-form-field>
+  <mat-form-field class="example-full-width">
+    <mat-label>Threshold</mat-label>
+    <input matInput placeholder="Product" value={{data.threshold}}>
+  </mat-form-field>
+</form>
 
-<md-dialog-actions class="pull-right">
+<mat-dialog-actions class="pull-right">
   <button class="btn btn-default dialog-action" md-dialog-close>Cancel</button>
   <button class="btn btn-primary dialog-action" md-dialog-close>Save Changes</button>
-</md-dialog-actions>
+</mat-dialog-actions>

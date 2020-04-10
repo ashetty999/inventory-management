@@ -40,3 +40,14 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+tsconfig.spec.json
+tsconfig.json.orig
+tsconfig.json.orig
+package.json.orig
+karma.conf.js.orig
+/src/polyfills.ts.orig
+
+#modules
+node_modules
+node_modules_actual
+node_modules_sd

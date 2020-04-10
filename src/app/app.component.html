@@ -1,9 +1,9 @@
-<md-tab-group [(selectedIndex)] = index>
-  <md-tab label="Dashboard">
-  </md-tab>
-  <md-tab label="Products">
-  </md-tab>
-</md-tab-group>
+<mat-tab-group [(selectedIndex)] = index>
+  <mat-tab label="Dashboard">
+  </mat-tab>
+  <mat-tab label="Products">
+  </mat-tab>
+</mat-tab-group>
 
 <section *ngIf="index == 0"><dashboard></dashboard></section>
 <section *ngIf="index == 1"><product></product></section>

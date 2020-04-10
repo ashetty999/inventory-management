@@ -1,9 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MdGridListModule } from '@angular/material';
-import { MdGridTile } from '@angular/material';
-import { MdInputModule } from '@angular/material';
-import { MdSelectModule } from '@angular/material';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
 
 import { LowStockComponent } from './low-stock/low-stock.component';
 import { StockLevelReportComponent } from './stock-level-report/stock-level-report.component';
@@ -13,9 +12,9 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 @NgModule({
   imports: [
     CommonModule,
-    MdGridListModule,
-    MdInputModule,
-    MdSelectModule
+    MatGridListModule,
+    MatInputModule,
+    MatSelectModule
   ],
   exports: [DashboardComponent],
   declarations: [LowStockComponent, StockLevelReportComponent, TransactComponent, DashboardComponent]
